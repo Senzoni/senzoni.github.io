@@ -1,0 +1,26 @@
+body{
+	font-family: Arial,sans-serif;
+}
+nav{
+	width: 100%;
+	height: 60px;
+	background: #344051;
+}
+
+.logo{
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 388px;
+	float: left;
+}
+
+.menu{
+	float: left;
+	padding-left: 432px;
+
+}
+
+.menu li{
+	float: left;
+}

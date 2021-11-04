@@ -1,0 +1,45 @@
+*{
+    padding: 0; отступы внутри блока
+    margin: 0; наружные отступы внешние
+    border: 0; обводка
+}
+
+*,*:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; браузер расчитывает высоту и длину
+}
+
+:focus, :active{outline: none;} цвет ссылки при новидении
+a:focus, a:active{outline: none;} убирает подчеркиване
+
+nav, footer, header, aside{display: block;} блочные элементы
+
+html, body{
+height:100%;
+width:100%;
+font-size 100%;
+line-height: 1;
+font-size:14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+} блокам html,body применяется 
+
+input, button, textarea{font-family: inherit; стиль шрифта для кнопок
+} 
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;} 
+button::-moz-focus-inner{padding: 0; border:0;} 
+a, a:visited{text-decoration: none; color: black;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;} 
+img{vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+
+
