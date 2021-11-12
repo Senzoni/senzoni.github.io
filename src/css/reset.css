@@ -1,19 +1,19 @@
 *{
-    padding: 0; отступы внутри блока
-    margin: 0; наружные отступы внешние
-    border: 0; обводка
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
 }
 
 *,*:before, *:after{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box; браузер расчитывает высоту и длину
+	box-sizing: border-box; 
 }
 
-:focus, :active{outline: none;} цвет ссылки при новидении
-a:focus, a:active{outline: none;} убирает подчеркиване
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;} 
 
-nav, footer, header, aside{display: block;} блочные элементы
+nav, footer, header, aside{display: block;} 
 
 html, body{
 height:100%;
@@ -24,9 +24,9 @@ font-size:14px;
 -ms-text-size-adjust: 100%;
 -moz-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
-} блокам html,body применяется 
+}  html,body  
 
-input, button, textarea{font-family: inherit; стиль шрифта для кнопок
+input, button, textarea{font-family: inherit;
 } 
 
 input::-ms-clear{display: none;}
