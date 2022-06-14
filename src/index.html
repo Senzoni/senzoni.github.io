@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <meta name="description" content="Этоя моя первая страница...">
-    <meta name="author" content="Ivan">
-    <meta name="robots" content="all">
-    <meta property="og.title" content="Это моя первая страница...">
-    <title>Иван Макаров</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta name="description" content="Этоя моя первая страница...">
+  <meta name="author" content="Ivan">
+  <meta name="robots" content="all">
+  <meta property="og.title" content="Это моя первая страница...">
+  <title>Иван Макаров</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <div class="preloader">
-      <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-      </div>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
     </div>
-    <script>
+  </div>
+  <script>
     window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-    document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-    }, 900);
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 900);
     }
-    </script>
-    <header>
-      <nav>
-        <div class="container">
-          <div class="row justify-content-center ">
+  </script>
+  <header>
 
+    <nav>
+      <div class="container ">
+        <div class="row   ">
+          <div class="nav">
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-7">
               <div class="logo">Иван Макаров</div> 
             </div>
-            <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-2 offset-lg-1 d-none d-lg-block">
+            <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-2 offset-lg-1 d-none d-lg-block ">
               <div class="menu">
-              <ul>
-                <li><a nav__link href="#">Обо мне</a></li>
-                <li><a nav__link href="#">Услуги</a></li>
-                <li><a nav__link href="#">Прайс</a></li>
-                <li><a nav__link href="#">Отзывы</a></li>
-                <li><a nav__link href="#">Контакты</a></li>
-              </ul> </div>
+                <ul>
+                  <li><a class = nav__link href="#">Главная</a></li>
+                  <li><a class = nav__link href="#">Обо мне</a></li>
+                  <li><a class = nav__link href="#">Услуги</a></li>
+                  <li><a class = nav__link href="#">Прайс</a></li>
+                  <li><a class = nav__link href="#">Контакты</a></li>
+                </ul> </div>
+              </div>
+              <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                <div class="dropdown">
+                  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#"      role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Навигация
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                    <li><a class="dropdown-item" href="#">Услуги</a></li>         
+                    <li><a class="dropdown-item" href="#">Прайс</a></li>
+                    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                  </ul>
+                </div></div>
+              </div>
+
             </div>
-            <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
-              <div class="dropdown">
-                <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#"      role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Навигация
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                  <li><a class="dropdown-item" href="#">Услуги</a></li>           
-                  <li><a class="dropdown-item" href="#">Прайс</a></li>
-                  <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                  <li><a class="dropdown-item" href="#">Контакты</a></li>
-                </ul>
-              </div></div>
-            </div>
-            
           </div>
         </nav>
       </header>
@@ -70,159 +72,209 @@
         <section  class="main">
           <div class="container h-100">
             <div class="row align-items-center h-100">
-              
-            <div class="col-xxl-8">
-            <div class="title__container">
-              <h1> Привет <br> Я Иван Макаров </h1>
-              <div class="row justify-content-center">
-              <div class="col-xxl-10">
-              <h4><i class="fa fa-css3 custom-ccs3" aria-hidden="true" ></i> Фулл стек веб-разработчкик</h4>
-              <input type="button" value="Мои работы">
-              <input type="button" value="Нанять меня">
-            </div></div>
-          </div>
-          </div></div></div>
-          
-        </section>
-      </main>
-      
-      <div class="Two">
-        <div class="container">
-          <div class="row">
-            <div class="col-5 "></div>
-            <div class="col-xxl-2 col-lg-3 col-7"><h2>Обо мне</h2></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-xxl-8 col-lg-11 col-24"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, saepe corporis adipisci inventore, ipsam porro libero! Omnis, sit, ea.Praesentium accusamus nulla corrupti illum veniam assumenda!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis a et sit obcaecati maiores eaque quia temporibus dolorem!</p></div>
-          </div>
-        </div>
-        
-        <table border="3" width="10%">
-          <div class="container ">
-            <div class="row">
-              <div class="col-5"></div>
-              <div class="col-xxl-2 col-lg-3 col-7"><input type="button" value="скачать резюме"></div>
-            </div>
-          </div>
-          
-          
-        </table>
-         </div>
-          </div>
-      </div>
-      <div class="Three">
-        <div class="container">
-          <div class="row">
-            <div class="col-5"></div>
-              <div class="col-xxl-2 col-lg-3 col-7"><h3>Что я умею</h3></div>
-            
-          </div>
 
-        
-        
-          <div class="row">
-            <div class="col-4"><div class="web_scill" style="">
-          <img src="" alt="">
-          <h4>Веб-дизайн</h4>
-          <p>Lorem ipsum dolor sit ame.</br></p>
-        </div></div>
-        <div class="row">
-        <div class="web_scill2" style="">
-          <img src=" " alt="">
-          <h4>Разработка</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div></div>
-        <div class="row">
-        <div class="web_scill3" style="">
-          <img src=" " alt="">
-          <h4>СЕО-оптимизация</h4>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div></div>
-        <div class="row">
-        <div class="web_scill4" style="">
-          <img src=" " alt="">
-          <h4>Маркетинг</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div></div>
-          </div>
-          
-        
-        </div>
+              <div class="col-xxl-8">
+                <div class="title__container">
+                  <h1> Привет <br> Я Иван Макаров </h1>
+                  <div class="row justify-content-center">
+                    <div class="col-xxl-10">
+                      <h4><i class="fa fa-css3 custom-ccs3" aria-hidden="true" ></i> Фулл стек веб-разработчкик</h4>
+                      <input type="button" value="Мои работы">
+                      <input type="button" value="Нанять меня">
+                    </div></div>
+                  </div>
+                </div></div></div>
+
+              </section>
+            </main>
+
+            <div class="Two">
+              <div class="container">
+                <div class="row">
+                  <div class="col-5 "></div>
+                  <div class="col-xxl-2 col-lg-3 col-7"><h2>Обо мне</h2></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-xxl-8 col-lg-11 col-24"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, saepe corporis adipisci inventore, ipsam porro libero! Omnis, sit, ea.Praesentium accusamus nulla corrupti illum veniam assumenda!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis a et sit obcaecati maiores eaque quia temporibus dolorem!</p></div>
+                  </div>
+                </div>
+
+                <table border="3" width="10%">
+                  <div class="container ">
+                    <div class="row">
+                      <div class="col-5"></div>
+                      <div class="col-xxl-2 col-lg-3 col-7"><input type="button" value="скачать резюме"></div>
+                    </div>
+                  </div>
+
+
+                </table>
+              </div>
             </div>
-            
-      <div class="Five">
-        <div class="Five2">
-          <h3>Расчет стоимости</h3>
-          <div class="Strok">
-            <h5>Тип сайта</h5>
-            <select name="list1" id="list" >
-              <option value="Opt1">Выберите пункт...</option>
-            </select>
-            <h5>Дизайн</h5>
-            <select name="list2" id="list">
-              <option value="Opt2">Выберите пункт...</option>
-            </select>
-            <h5>Адаптивность</h5>
-            <select name="list3" id="list">
-              <option value="Opt3">Выберите пункт...</option>
-            </select>
           </div>
-          <div class="Six">
-            <h5>Сроки</h5>
-            <h5>Стоимость</h5>
-            <a href="https://yandex.ru"target="_blank">Оставить заявку</a>
-          </div>
-        </div>
-      </div>
-      <div class="Static">
-        <h3>Статистика</h3>
-        <div class="static1" style="">
-          <img src="" alt="">
-          <h4>133</h4>
-          <p>Lorem ipsum dolor sit amet.</br></p>
-        </div>
-        <div class="static2" style="">
-          <img src="" alt="">
-          <h4>5454</h4>
-          <p>Lorem ipsum dolor sit amet.</br></p>
-        </div>
-        <div class="static3" style="">
-          <img src="" alt="">
-          <h4>323</h4>
-          <p>Lorem ipsum dolor sit amet.</br></p>
-        </div>
-        <div class="static4" style="">
-          <img src="" alt="">
-          <h4>22</h4>
-          <p>Lorem ipsum dolor sit amet.</br></p>
-        </div>
-      </div>
-      <div class="Seven">
-        <h3>Отзывы</h3>
-        <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque porro provident, sequi, autem a alias quisquam facere amet tempora quasi,<br> corrupti fugit sapiente distinctio accusantium!</b></p>
-        <p><b>Lorem ipsum, dolor sit amet.</b></p>
-      </span>
-    </div>
-    <footer>
-      <div class="Contate"><h2>Мои контакты</h2></div>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      <a href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&utm_source=main_stripe_big&z=10.46"target="_blank">Яндекс карты</a>
-      <a href="Yslygi.pdf"target="_blank">Почта</a>
-      <a href="+7 999-999-99-99"target="_blank">+7 999-999-99-99</a>
-      <form action=".,">
-        <div class="Pochta"> <h3>Оставьте мне сообщения</h3>
-          <input class="inputOne" type="text" name="text_input" value="" placeholder="Имя">
-          <input class="inputTwo" type="text" name="text_input" value="" placeholder="Email">
-          <textarea name="Сообщение" id="1" cols="40" rows="2" >
-          </textarea>
-        </div>
-        <h3><input class="inputThree" type="reset" value="Отправить"></h3>
-      </form>
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+          <div class="Three">
+            <div class="container h-100">
+              <div class="row">
+                <div class="col-5"></div>
+                <div class="col-xxl-4 col-lg-3 col-7"><h3>Что я умею</h3></div>
+
+              </div>
+
+
+
+              <div class="row justify-content-center ">
+
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                  <div class="web_scill" style="">
+                  <img src="" alt="">
+                  <h4>Веб-дизайн</h4>
+                  <p>Lorem ipsum dolor sit ame.</br></p>
+                </div></div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                  <div class="web_scill2" style="">
+                    <img src=" " alt="">
+                    <h4>Разработка</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div></div>
+                      <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                    <div class="web_scill3" style="">
+                      <img src=" " alt="">
+                      <h4>СЕО-оптимизация</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div></div>
+                        <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                      <div class="web_scill4" style="">
+                        <img src=" " alt="">
+                        <h4>Маркетинг</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+                  
+
+
+                 
+                
+
+                <div class="Five">
+                  <div class="container"> 
+                      
+                          <div class="Five2">
+                            <div class="row"> 
+                              <div class="col-3"> </div>
+                              <div class="col-6"> <h3>Расчет стоимости</h3> </div>
+                   </div>
+                    <div class="Strok">
+                       <div class="row justify-content-center"> 
+                      <h5>Тип сайта</h5>
+                      <select name="list1" id="list" >
+                        <option value="Opt1">Выберите пункт...</option>
+                      </select>
+                      <h5>Дизайн</h5>
+                      <select name="list2" id="list">
+                        <option value="Opt2">Выберите пункт...</option>
+                      </select>
+                      <h5>Адаптивность</h5>
+                      <select name="list3" id="list">
+                        <option value="Opt3">Выберите пункт...</option>
+                      </select>
+                    </div>
+                    <div class="Six">
+                      <h5>Сроки</h5>
+                      <h5>Стоимость</h5>
+                      <a href="https://yandex.ru"target="_blank">Оставить заявку</a>
+                    </div>
+                  </div>
+                      </div>
+                  </div>  
+                  
+                </div>
+
+                <div class="Static">
+                  <div class="container h-100"> 
+                    <div class="row"> 
+                      <div class="col-2"> </div>
+                        <div class="col-5"> <h3>Статистика</h3></div>
+                    </div>
+                  
+                      <div class="row justify-content-center"> 
+                        <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                  <div class="static1" style="">
+                    <img src="" alt="">
+                    <h4>133</h4>
+                    <p>Lorem ipsum dolor sit amet.</br></p>
+                  </div></div>
+                  <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                  <div class="static2" style="">
+                    <img src="" alt="">
+                    <h4>5454</h4>
+                    <p>Lorem ipsum dolor sit amet.</br></p>
+                  </div></div>
+                  <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                  <div class="static3" style="">
+                    <img src="" alt="">
+                    <h4>323</h4>
+                    <p>Lorem ipsum dolor sit amet.</br></p>
+                  </div></div>
+                   <div class="col-12 col-sm-6 col-md-3 text-center">  
+                  <div class="static4" style="">
+                    <img src="" alt="">
+                    <h4>22</h4>
+                    <p>Lorem ipsum dolor sit amet.</br></p>
+                  </div></div>
+                </div>
+              </div></div>
+                <div class="Seven">
+                  <div class="container h-100"> 
+                      <div class="row pt-3"> 
+                          <div class="col-5"> </div>
+                          <div class="col-5"><h3>Отзывы</h3> </div>
+                      </div>  
+                      <div class="row justify-content-center pt-5 mt-5"> 
+                  <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque porro provident, sequi, autem a alias quisquam facere amet tempora quasi,<br> corrupti fugit sapiente distinctio accusantium!</b></p>
+                  <p><b>Lorem ipsum, dolor sit amet.</b></p>
+                </div>
+              </div>
+            </div>
+              <footer>
+                <div class="container"> 
+                  <div class="row"> 
+                      <div class="col-4"> </div>
+                      <div class="col-4"> <div class="Contate"><h2>Мои контакты</h2></div></div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-2"> </div>
+                    <div class="col-8"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-3 text-center"> 
+                        <a href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&utm_source=main_stripe_big&z=10.46"target="_blank">Яндекс карты</a></div>
+                        <div class="col-12 col-sm-6 col-md-3 text-center">
+                <a href="Yslygi.pdf"target="_blank">Почта</a></div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                <a href="+7 999-999-99-99"target="_blank">+7 999-999-99-99</a>
+                </div>
+                    </div>
+                  <div class="Work">
+                    <div class="row justify-content-center pt-5 mt-5"> 
+                     <div class=" col-xxl-8 mt-5 mt-5"> 
+                  <div class="Pochta">
+                    <input class="inputOne" type="text" name="text_input" value="" placeholder="Имя">
+                    <input class="inputTwo" type="text" name="text_input" value="" placeholder="Email">
+                    <textarea name="Сообщение" id="1" cols="40" rows="2" >
+                    </textarea>
+                  </div>
+                  <h3><input class="inputThree" type="reset" value="Отправить"></h3>
+                </div></div>
+              </div>
+              </div>
+              </footer>
+              <script src="js/bootstrap.bundle.min.js"></script>
+            </body>
+            </html>
