@@ -64,12 +64,12 @@ const nav = document.querySelector('.nav');
 nav.addEventListener('click',(event) => {
     nav.classList.toggle('open');
 });
-/*Бургер*//*
+/*Бургер*/
 
 $('.menu-btn').on('click', function(e) {
 	e.preventDefault;
 	$(this).toggleClass('menu-btn_active');
-});*/
+});
 
 /*Бегающие цифры статистики*/
      let optionsStat = {
