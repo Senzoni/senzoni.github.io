@@ -835,10 +835,15 @@
 
 	}
 
-	.menu-btn{
-		display: none;
-		
+.menu-btn{
+		color: #fff;
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		border-radius: 50%;
+		position: relative;
 	}
+	
 	.menu-btn span,
 	.menu-btn span::before,
 	.menu-btn span::after  {
@@ -874,30 +879,28 @@
 	.menu-btn_active span:after{
 		transform: rotate(-35deg);
 		width: 10px;	
-		transform-origin: 	left top;
+		transform-origin: left top;
 	}
-@media(min-width: 767px ){
-	.menu-btn {
+
+	.menu-block{
+		display: none;
+	}
+
+@media(max-width: 767px){
+	.menu-block{
 		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #fff;
-		border-radius: 50%;
-		position: relative;
 	}
-	}
-
-
-
-.menu-burger a{
+}
+	
+.menu-burger{
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
 	font-size: 20px;
 	color: #222;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	display: inline-block;
 	background-color: #fff;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 }
+
