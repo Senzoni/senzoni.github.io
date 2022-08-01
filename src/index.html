@@ -41,7 +41,7 @@
       <div class="container ">
         <div class="nav1 row   ">
           
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-7">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-7">
               <div class="logo">Иван Макаров</div> 
             </div>
             <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-2 offset-lg-1 d-none d-lg-block ">
@@ -55,14 +55,24 @@
                 </ul> </div>
               </div>
               <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+
                 <div class="webapp_cover">
-  <div class="menu_button" href="#" id="dropdownMenuLink " data-bs-toggle="webapp_cover" aria-expanded="false">
+  <div class="menu_button webapp-toggle" href="#" role="button" id="dropdownMenuLink " data-bs-toggle="webapp_cover" aria-expanded="false">
     <input type="checkbox" id="menu_checkbox">
     <label for="menu_checkbox" id="menu_label">
       <div id="menu_text_bar"></div>
     </label>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                      <li><a class="dropdown-item" href="#">Услуги</a></li>       
+                      <li><a class="dropdown-item" href="#">Прайс</a></li>
+                      <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                      <li><a class="dropdown-item" href="#">Контакты</a></li>
+                    </ul>
   </div>
 </div>
+
+
 
                <!-- <div class="dropdown">
                   <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#"      role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -85,7 +95,7 @@
                   </div>
                 
               </div></div>-->
-            
+            </div>
         </nav>
       </header>
       <main>
@@ -279,7 +289,7 @@
                             <!--Burger-->
                              <div class="col-12 d-flex d-lg-none flex-column justify-content-center align-items-center">
                              <div class="dropdown">
-                    <button href="#" class="nav" >
+                    <button href="#" class="burgers" >
                       <span></span>
                       <span></span>
                       <span></span>

@@ -60,7 +60,7 @@ $('a[href^="#"]').click(function(){
 });
 
 /*Бургер*/
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.burgers');
 nav.addEventListener('click',(event) => {
     nav.classList.toggle('open');
 });
