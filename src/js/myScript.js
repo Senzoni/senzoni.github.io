@@ -35,7 +35,7 @@
 	}); 
 	calculate();
 /*Анимация,при достижении половины блока*/
-	let options = {threshold: [0.5]};
+	let options = {threshold: [0.8]};
 		let observer = new IntersectionObserver(onEntry, options);
 		let elements = $('.element-animation');
 		elements.each((i,el) => {
@@ -59,17 +59,20 @@ $('a[href^="#"]').click(function(){
 		$('html, body').animate({scrollTop: $(valHref).offset().top - 50 + "px"});
 });
 
-/*Бургер*/
+/*Нижний Бургер
 const nav = document.querySelector('.burgers');
 nav.addEventListener('click',(event) => {
     nav.classList.toggle('open');
-});
-/*Бургер*/
+});*/
+
+
+
+/*Бургер
 
 $('.menu-btn').on('click', function(e) {
 	e.preventDefault;
 	$(this).toggleClass('menu-btn_active');
-});
+});*/
 
 /*Бегающие цифры статистики*/
      let optionsStat = {
