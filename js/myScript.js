@@ -18,7 +18,15 @@
 			}
 		});
 		
-
+		$(window).scroll(function(event){
+			if($(this).scrollTop() > 80){
+				$(".nav-scroll").slideDown();
+				return false;
+			}
+			else {
+				$(".nav-scroll").slideUp();
+			}
+		});
 	});
 /*Загрузчик,отмена*/
 	$(".loaderArea").css("display", "none");
