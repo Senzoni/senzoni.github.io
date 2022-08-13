@@ -17,7 +17,7 @@
 				$('nav li:eq(' + i + ')').find('a').addClass('active'); 
 			}
 		});
-		
+		/*Появление навигации при скролле*/
 		$(window).scroll(function(event){
 			if($(this).scrollTop() > 80){
 				$(".nav-scroll").slideDown();
