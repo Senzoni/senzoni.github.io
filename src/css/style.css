@@ -123,9 +123,9 @@
 .logo-main{
 		color: #fff ;
 		font-size: calc(35px + 7 * ((100vw - 320px)/(1280-320)));
-		padding-bottom: 100px;
+		
 		font-weight: 400;
-		line-height: 60px;
+		line-height: 10px;
 		-webkit-animation: comming 5s ease forwards;
 		-o-animation: comming 5s ease forwards;
 		animation: comming 5s ease forwards;
@@ -371,7 +371,8 @@
 		}
 
 .menu-main li{
-		line-height: 60px;
+	line-height: 80px;
+		height: 50px;
 		color: #fff;
 		font-weight: 500;
 		margin-right: 40px;
@@ -406,7 +407,7 @@
 	.menu-main a:active{
 		transform: scale(1.1);
 		}
-.nav-main hr{
+.main-scroll hr{
 			height: 4px;
 			border: none;
 			background: #EC7C26;
