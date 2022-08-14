@@ -302,7 +302,7 @@
 		.main{
 			width: 100%;
 			height: 100%;
-			background:url(../img/3.jpg);
+			background:url(../img/fonfoto.jpg);
 			background-attachment: fixed;
 		}
 
@@ -406,7 +406,15 @@
 	.menu-main a:active{
 		transform: scale(1.1);
 		}
+.nav-main hr{
+			height: 4px;
+			border: none;
+			background: #EC7C26;
+			max-width: 100%;
+			margin: 0 auto 60px;
+			opacity: 1;
 
+		}
 
 		@keyframes comming{
 			from{
