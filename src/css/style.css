@@ -122,7 +122,7 @@
 
 .logo-main{
 		color: #fff ;
-		font-size: calc(35px + 7 * ((100vw - 320px)/(1280-320)));
+		font-size: calc(30px + 7 * ((100vw - 320px)/(1280-320)));
 		
 		font-weight: 400;
 		line-height: 10px;
@@ -328,7 +328,7 @@
 
 		.title__container h4{
 			padding: 180px 0px 0px 0px;
-			font-size: 36px;
+			font-size: 46px;
 			color: #000;
 			-webkit-text-stroke: 1px #fff;
 			font-weight: 800;
@@ -377,7 +377,7 @@
 		font-weight: 500;
 		margin-right: 40px;
 		font-style: oblique;
-		font-size: 18px;
+		font-size: 19px;
 		text-transform: uppercase;
 		-webkit-animation: topshift 0.4s ease forwards;
 		-o-animation: topshift 0.4s ease forwards;
@@ -392,20 +392,19 @@
 		text-decoration: none;
 	}
 
-	.nav__main{
-		color: #fff;
-	}
-		
 	
-	.menu-main a:hover{
+		
+
+	.menu-main li a:hover{
 		color: #fff;
 
 	}
-	.menu-main a:visited{
+	.menu-main li a:visited{
 		color: #fff;
 	}
-	.menu-main a:active{
+	.menu-main li a:active{
 		transform: scale(1.1);
+		color: #EC7C26;
 		}
 .main-scroll hr{
 			height: 4px;
@@ -414,6 +413,8 @@
 			max-width: 100%;
 			margin: 0 auto 60px;
 			opacity: 1;
+			margin-bottom: 100px;
+			margin-top: 10px;
 
 		}
 
@@ -465,6 +466,12 @@
 		}
 		.white-btn:visited{
 			color: white;
+		}
+		@media(max-width: 767px){
+			.main-scroll,.logo-main{
+
+				padding: 10px 0;
+			}
 		}
 		@media(max-width: 991px){
 			.title__container, .title__container h4, .title__container input{
@@ -577,7 +584,10 @@
     padding-bottom: 96px;
 }
 .skills_container h2{
-	color: #fff;
+	font-weight: 800;
+			color:#000;
+			-webkit-text-stroke: 2px #fff;
+			font-style: oblique;
     text-align: center;
     width: 314px;
     font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
@@ -688,69 +698,7 @@
     font-size: 20px;
 
 }
-	/*
-		.Three{
-			background:url(../img/3.jpg) center/cover no-repeat;
-			background-attachment: fixed;
-			height: 700px;
-
-
-		}
-		.Three h3{
-
-			color: #000;
-			-webkit-text-stroke:1px #fff;
-			font-size: 45px;
-			font-style: oblique;
-			font-weight: 400;
-			line-height: 80px;
-
-		}	
-
-
-
-		.Three h4{
-			color: #fff;
-			font-size: 20px;
-			font-style: oblique;
-
-
-		}
-
-		.Three p{
-			font-size: 14px;
-			color: #fff;
-			text-align: center;
-			line-height: 50px;
-
-		}
-
-		.web_scill{
-			font-size: 14px;
-			text-transform: uppercase;
-			font-style: oblique;
-			font-weight: 400;
-
-		}
-		.web_scill2{
-			font-size: 14px;
-			text-transform: uppercase;
-			font-style: oblique;
-			font-weight: 400;
-		}
-		.web_scill3{
-			font-size: 14px;
-			text-transform: uppercase;
-			font-style: oblique;
-			font-weight: 400;
-		}
-		.web_scill4{
-			font-size: 14px;
-			text-transform: uppercase;
-			font-style: oblique;
-			font-weight: 400;
-		}
-*/
+	
 
 		.calculator{
 			background: url(../img/Fon4.jpg) center/cover no-repeat;
@@ -768,11 +716,13 @@
 
 		.calculator_container h2{
 			text-align: center;
-			max-width: 458px;
-			color: #fff;		
+			max-width: 488px;
+			font-weight: 800;
+			color:#000;
+			-webkit-text-stroke: 2px #fff;
+			font-style: oblique;	
 			font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
-			font-style: oblique;
-			font-weight: 400;
+			
 			margin: 0px auto 50px;
 
 		}
@@ -893,7 +843,10 @@
       text-align: center;
     max-width: 390px;
     font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
-    font-weight: 700;
+    font-weight: 800;
+			color:#fff;
+			-webkit-text-stroke: 3px #000;
+			font-style: oblique;
     margin: 0px auto 30px;
     padding-bottom: 5px;
     text-transform: uppercase;
@@ -947,9 +900,10 @@
 			.contacts_container h2{
 				text-align: center;
 				max-width: 490px;
-				color: #fff;
-				font-style: oblique;
-				font-weight: 400;
+				font-weight: 800;
+			color:#000;
+			-webkit-text-stroke: 2px #fff;
+			font-style: oblique;
 				font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
 				margin: 0px auto 30px;
 				padding-bottom: 5px;
@@ -959,10 +913,10 @@
 
 			.contacts_container hr{
 				height: 4px;
-				border: none;
+				border: none; 
 				background: #d17700;
 				width: 180px;
-				margin: 0 auto 32px;
+				margin: 0 auto 62px;
 				opacity: 1;
 
 			}
@@ -987,8 +941,12 @@
 			.contacts_data_item p{
 				font-size: 16px;
 				color: #fff;
-			}
 
+
+			}
+.contacts_data_item a{
+	text-decoration: none;
+}
 			.contacts_container h3{
 				color: #fff;
 				margin-top: 40px;
@@ -1039,7 +997,7 @@
 
 			/*Бургер*/
 
-
+/*
 
 .burgers{
     display: block;
