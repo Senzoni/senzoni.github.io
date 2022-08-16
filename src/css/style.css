@@ -96,7 +96,7 @@
 
 	.logo{
 		color: #000;
-		font-size: calc(28px + 7 * ((100vw - 320px)/(1280-320)));
+		font-size: calc(30px + 7 * ((100vw - 320px)/(1280-320)));
 
 		font-weight: 400;
 		line-height: 60px;
@@ -120,21 +120,7 @@
 	
 	}
 
-.logo-main{
-		color: #fff ;
-		font-size: calc(30px + 7 * ((100vw - 320px)/(1280-320)));
-		
-		font-weight: 400;
-		line-height: 10px;
-		-webkit-animation: comming 5s ease forwards;
-		-o-animation: comming 5s ease forwards;
-		animation: comming 5s ease forwards;
-		font-family: FranklinGot, sans-erif;
-		font-style: oblique;
-		
 
-
-	}
 
 	.nav__link{
 		color: #fff;
@@ -145,7 +131,7 @@
 		font-weight: 500;
 		margin-right: 40px;
 		font-style: oblique;
-		font-size: 18px;
+		font-size: calc(12px + 6 * ((100vw - 320px)/(1280-320)));
 		text-transform: uppercase;
 		-webkit-animation: topshift 0.4s ease forwards;
 		-o-animation: topshift 0.4s ease forwards;
@@ -161,6 +147,7 @@
 	}
 	
 	/*Burger
+
 	.dropdown {
   position: absolute;
   top: 50%;
@@ -320,7 +307,7 @@
 		}
 		.title__container h1{
 			font-family: Arial, sans-serif;
-			font-size: 72px;
+			font-size: calc(40px + 32 * ((100vw - 320px)/(1280-320)));
 			font-weight: 800;
 			color:#fff;
 			font-style: oblique;
@@ -328,7 +315,7 @@
 
 		.title__container h4{
 			padding: 180px 0px 0px 0px;
-			font-size: 46px;
+			font-size: calc(25px + 18 * ((100vw - 320px)/(1280-320)));
 			color: #000;
 			-webkit-text-stroke: 1px #fff;
 			font-weight: 800;
@@ -337,7 +324,7 @@
 
 		}
 		.custom-ccs3{
-			font-size: 60px;
+			font-size: calc(45px + 15 * ((100vw - 320px)/(1280-320)));
 			color: #000;
 			-webkit-text-stroke: 1px #fff;
 
@@ -345,7 +332,7 @@
 		}
 
 
-		.title__container input{
+		.title__container a{
 			height: 40px;
 			text-align: center;
 			border: 2px solid #fff;
@@ -355,21 +342,35 @@
 			font-size: 20px;
 			padding: 0px 16px;
 			margin: 58px 14px 0px 14px;
+			text-decoration: none;
 		}
 
-		.title__container input{
+		.title__container a{
 			transition: all 0.2s;
 			transform: scale(1);
 
 		}
-		.title__container input:hover{
+		.title__container a:hover{
 			background: #FFF;
 			color: #000;	
 		}
-		.title__container input:active{
+		.title__container a:active{
 			transform: scale(1.1);
 		}
+.logo-main{
+		color: #fff ;
+		font-size: calc(27px + 10 * ((100vw - 320px)/(1280-320)));	
+		font-weight: 400;
+		line-height: 10px;
+		-webkit-animation: comming 5s ease forwards;
+		-o-animation: comming 5s ease forwards;
+		animation: comming 5s ease forwards;
+		font-family: FranklinGot, sans-erif;
+		font-style: oblique;
+		
 
+
+	}
 .menu-main li{
 	line-height: 80px;
 		height: 50px;
@@ -377,7 +378,7 @@
 		font-weight: 500;
 		margin-right: 40px;
 		font-style: oblique;
-		font-size: 19px;
+		font-size: calc(12px + 7 * ((100vw - 320px)/(1280-320)));
 		text-transform: uppercase;
 		-webkit-animation: topshift 0.4s ease forwards;
 		-o-animation: topshift 0.4s ease forwards;
@@ -467,7 +468,7 @@
 		.white-btn:visited{
 			color: white;
 		}
-		@media(max-width: 767px){
+		@media(max-width: 985px){
 			.main-scroll,.logo-main{
 
 				padding: 10px 0;
@@ -496,6 +497,7 @@
 				z-index: 1;
 			}
 		}
+
 
 		.about{
 			background: url(../img/fon2.jpg) center/cover no-repeat;
@@ -590,7 +592,7 @@
 			font-style: oblique;
     text-align: center;
     width: 314px;
-    font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
+    font-size: calc(33px + 10 * ((100vw - 320px)/(1280-320)));
     margin: 0px auto 30px;
     padding-bottom: 5px;
     text-transform: uppercase;
@@ -721,7 +723,7 @@
 			color:#000;
 			-webkit-text-stroke: 2px #fff;
 			font-style: oblique;	
-			font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
+			font-size: calc(33px + 10 * ((100vw - 320px)/(1280-320)));
 			
 			margin: 0px auto 50px;
 
@@ -730,8 +732,8 @@
 			height: 4px;
 			border: none;
 			background: #EC7C26;
-			width: 180px;
-			margin: 0px auto 32px;
+			width: 130px;
+			margin: -10px auto 42px;
 			opacity: 1;
 		}
 		.calculator_inner{
@@ -799,7 +801,7 @@
 			height: 50px;
 		}
 
-		.calculator_footer button{
+		.calculator_footer a{
 			height: 40px;
 			text-align: center;
 			border: 2px solid #fff;
@@ -807,22 +809,23 @@
 			border-radius: 5px;
 			color: #fff;
 			font-size: 20px;
-			padding: 0px 16px;
-			margin: 58px 14px 0px 14px;
+			padding: 7px 16px;
+			
+			text-decoration: none;
 		}
 
 
 
-		.calculator_footer button{
+		.calculator_footer a{
 			transition: all 0.2s;
 			transform: scale(1);
 
 		}
-		.calculator_footer button:hover{
+		.calculator_footer a:hover{
 			background: #FFF;
 			color: #000;	
 		}
-		.calculator_footer button:active{
+		.calculator_footer a:active{
 			transform: scale(1.1);
 		}
 
@@ -842,10 +845,10 @@
 .statistic_container h2{
       text-align: center;
     max-width: 390px;
-    font-size: calc(30px + 13 * ((100vw - 320px)/(1280-320)));
+    font-size: calc(33px + 10 * ((100vw - 320px)/(1280-320)));
     font-weight: 800;
 			color:#fff;
-			-webkit-text-stroke: 3px #000;
+			-webkit-text-stroke: 2px #000;
 			font-style: oblique;
     margin: 0px auto 30px;
     padding-bottom: 5px;
@@ -914,8 +917,8 @@
 			.contacts_container hr{
 				height: 4px;
 				border: none; 
-				background: #d17700;
-				width: 180px;
+				background: #EC7C26;
+				width: 100px;
 				margin: 0 auto 62px;
 				opacity: 1;
 
@@ -939,13 +942,22 @@
 			}
 
 			.contacts_data_item p{
-				font-size: 16px;
-				color: #fff;
+				font-size: 18px;
+				color: #EC7C26;
 
 
 			}
+			.contacts_data_item p:hover{
+				color: #fff;
+			}.contacts_data_item p:active{
+				color: #fff;
+			}.contacts_data_item p:visited{
+				color: #fff;
+			}
 .contacts_data_item a{
 	text-decoration: none;
+
+
 }
 			.contacts_container h3{
 				color: #fff;
@@ -986,14 +998,19 @@
 				margin: 0 auto;
 				background: none;
 				color: #fff;
-				border: 2px solid white;
+				border: 2px solid #fff;
 				height: 46px;
 				width: 124px;
 				border-radius: 8px;
 				font-size: 20px;
 				margin-bottom: 76px;
 			}
-
+.custom-whatsapp{
+	color: #fff;
+	font-size: 35px;
+	margin-top: -5px;
+	padding:0 0 8px 0;
+}
 
 			/*Бургер*/
 
