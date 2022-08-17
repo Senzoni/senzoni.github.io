@@ -281,9 +281,6 @@
 	*/
 
 	
-.menu li a.active{
-		color:#fff;
-	}
 	
 	.menu li a:hover{
 		color: #fff;
@@ -292,10 +289,14 @@
 	.menu li a:active{
 		transform: scale(1.1);
 		}
+		.menu li a.active{
+		color:#fff;
+	}
+	
 		.main{
 			width: 100%;
 			height: 100%;
-			background:url(../img/123.png) 120% 260%/auto 97% no-repeat,url(../img/3.jpg);
+			background:url(../img/123.png) 105% 100%/auto 90% no-repeat , url(../img/3.jpg);
 			background-attachment: fixed;
 		}
 
@@ -348,7 +349,7 @@
 			color: #fff;
 			font-size: 20px;
 			padding: 0px 16px;
-			margin: 58px 14px 0px 14px;
+			margin: 88px 14px 0px 14px;
 			text-decoration: none;
 		}
 
@@ -496,6 +497,7 @@
 			}
 			.main{
 				position: relative;
+				background: url(../img/123.png) 48% 100%/auto 80% no-repeat, url(../img/3.jpg) ;
 			}
 			.main::after{
 				content: "";
@@ -515,7 +517,7 @@
 		.about{
 			background: url(../img/fon2.jpg) center/cover no-repeat;
 			background-attachment: fixed;
-			height: 600px;
+			height: 800px;
 
 		}
 		.element-animation{

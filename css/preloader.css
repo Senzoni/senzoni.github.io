@@ -31,7 +31,7 @@
 }
  
 .loader:before {
-  animation: animate 2s infinite linear;
+  animation: animate 4s infinite linear;
 }
  
 @keyframes animate {
@@ -46,7 +46,7 @@
  
  
 .loader:after {
-  animation: animate2 2s infinite linear;
+  animation: animate2 4s infinite linear;
 }
  
 @keyframes animate2 {
