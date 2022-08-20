@@ -274,9 +274,32 @@
   }
 }
 
+.dropdown-menu{
+	display: inline-block;
+	text-align: center;
+	background-color: #000;
+	border: 2px solid #EC7C26;
+	border-radius: 10px;
+	width: 100%;
+	margin: 2px 0px 2px -65px;
 
 
+}
+.dropdown-menu a{
+	color: #fff;
+}
 
+.dropdown-menu p{
+	font-size: 14px;
+}
+.dropdown-menu hr{
+			height: 1px;
+			border: none;
+			background: #EC7C26;
+			 
+			opacity: 1;
+			
+}
 
 	*/
 
@@ -345,7 +368,6 @@
 			border: 2px solid #fff;
 			border-radius: 15px;
 			background: none;
-			
 			color: #fff;
 			font-size: 20px;
 			padding: 0px 16px;
@@ -517,7 +539,7 @@
 		.about{
 			background: url(../img/fon2.jpg) center/cover no-repeat;
 			background-attachment: fixed;
-			height: 800px;
+			height: 850px;
 
 		}
 		.element-animation{
@@ -560,7 +582,7 @@
 
 		.about_container p{
 			margin-top: 24px;
-			font-size: 17px;
+			font-size: calc(15px + 4 * ((100vw - 320px)/(1280-320)));
 			color: #fff;
 
 		}
@@ -570,9 +592,12 @@
 				text-align: center;
 			}
 		}
-
+			.about_container .firstText{
+				line-height: 28px;
+			}
 		.about_container .secondText{
 			margin-top: 45px;
+			line-height: 35px;
 		}
 
 		.about_container a{
@@ -1020,6 +1045,19 @@
 				font-size: 20px;
 				margin-bottom: 76px;
 			}
+
+			.contacts_container input[type="submit"]{
+			transition: all 0.2s;
+			transform: scale(1);
+
+		}
+		.contacts_container input[type="submit"]:hover{
+			background: #FFF;
+			color: #000;	
+		}
+		.contacts_container input[type="submit"]:active{
+			transform: scale(1.1);
+		}
 .custom-whatsapp{
 	color: #fff;
 	font-size: 35px;
