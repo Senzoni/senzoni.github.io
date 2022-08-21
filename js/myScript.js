@@ -1,5 +1,9 @@
 	$(document).ready(function(){
+/*Анимация для бургера*/
 
+$('.webapp_cover').click(function(event){
+	$('.webapp_cover,.dropdown-menu').toggleClass('active');
+});
 
 
 	$(window).scroll(( ) => {
@@ -17,6 +21,7 @@
 				$('nav li:eq(' + i + ')').find('a').addClass('active'); 
 			}
 		});
+
 		/*Появление навигации при скролле*/
 		$(window).scroll(function(event){
 			if($(this).scrollTop() > 80){
@@ -48,6 +53,20 @@
 		let elements = $('.element-animation');
 		elements.each((i,el) => {
 			observer.observe(el);
+		});
+
+		// Сообщение после нажатия кнопки отправить
+		$('form').submit(function(event){
+			$.ajax({
+				type: "Post",
+				url: "php/mail.php",
+				data: $(this).serialize()
+		}).done(function(){
+			$(this).find("input").val("");
+			alert("Успешно отправлено");
+			$("form").trigger("reset");
+		});
+		return false;
 		});
 	});	
 

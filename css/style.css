@@ -281,6 +281,8 @@
 	border: 2px solid #EC7C26;
 	border-radius: 10px;
 	margin: 402px 0 12px 0;
+	visibility: hidden;
+	opacity: 1;
 
 
 
