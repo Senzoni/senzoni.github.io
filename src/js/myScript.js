@@ -1,8 +1,8 @@
 	$(document).ready(function(){
 /*Анимация для бургера*/
 
-$('.webapp_cover').click(function(event){
-	$('.webapp_cover,.dropdown-menu').toggleClass('active');
+$('.webapp_cover').on("click", function(event) {
+	$('.webapp_cover, .dropdown-menu').toggleClass('active');
 });
 
 
