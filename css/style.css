@@ -156,7 +156,9 @@
   transform: translateY(-50%) scale(2);
 
 }
-
+#webapp_cover.active{
+	color: red;
+}
 #menu_button {
   width: 26px;
   overflow: hidden;
