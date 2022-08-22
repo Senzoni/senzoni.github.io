@@ -281,15 +281,15 @@
 	border: 2px solid #EC7C26;
 	border-radius: 10px;
 	margin: 402px 0 12px 0;
-	display: none;
-	visibility: hidden;
-	opacity: 1;
+	
+	opacity: 0;
 
 
 
 }
-.webapp_cover.active{
-	top: 0;
+
+#webapp_cover, .dropdown-menu.active{
+	opacity: 1;
 }
 .dropdown-menu a{
 	color: #fff;

@@ -3,9 +3,9 @@
 
 $('.webapp_cover').on("click", function(event) {
 	if($('.webapp_cover, .dropdown-menu').hasClass('active')){
-			$('.webapp_cover, .dropdown-menu').addClass('active');
+		$('.webapp_cover, .dropdown-menu').removeClass('active');
 	}
-	
+	$('.webapp_cover, .dropdown-menu').toggleClass('active');
 });
 
 
