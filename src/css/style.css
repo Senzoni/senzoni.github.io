@@ -288,6 +288,9 @@
 
 
 }
+.webapp_cover.active{
+	top: 0;
+}
 .dropdown-menu a{
 	color: #fff;
 

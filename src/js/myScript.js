@@ -2,7 +2,10 @@
 /*Анимация для бургера*/
 
 $('.webapp_cover').on("click", function(event) {
-	$('.webapp_cover, .dropdown-menu').addClass('active');
+	if($('.webapp_cover, .dropdown-menu').hasClass('active')){
+			$('.webapp_cover, .dropdown-menu').addClass('active');
+	}
+	
 });
 
 
