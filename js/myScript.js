@@ -2,13 +2,12 @@
 /*Анимация для бургера*/
 
 $('.webapp_cover').on("click", function(event) {
-	if($('.webapp_cover, .dropdown-menu').hasClass('active')){
-		$('.webapp_cover, .dropdown-menu').removeClass('active');
-	}
-	else{
-		$('.webapp_cover, .dropdown-menu').eq(1).removeClass('active');
-	}
-	$('.webapp_cover, .dropdown-menu').toggleClass('active');
+if($('.webapp_cover, .dropdown-menu').hasClass('active')){
+$('.webapp_cover, .dropdown-menu').removeClass('active');
+}
+else{
+$('.webapp_cover, .dropdown-menu').addClass('active');
+}
 });
 
 
