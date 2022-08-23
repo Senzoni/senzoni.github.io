@@ -1,15 +1,17 @@
 	$(document).ready(function(){
 /*Анимация для бургера*/
 
-$('.webapp_cover').on("click", function(event) {
-if($('.webapp_cover, .dropdown-menu').hasClass('active')){
-$('.webapp_cover, .dropdown-menu').removeClass('active');
+$('#webapp_cover').on("click", function(event) {
+if($('#webapp_cover, .dropdown-menu').hasClass('active')){
+	alert(1);
+$('#webapp_cover, .dropdown-menu').removeClass('active');
 }
 else{
-$('.webapp_cover, .dropdown-menu').addClass('active');
+	alert(2);
+$('#webapp_cover, .dropdown-menu').addClass('active');
 }
 });
-
+$('.menu_label ').click(function(){return false})
 
 	$(window).scroll(( ) => {
 		let scrollDistance = $(window).scrollTop();
