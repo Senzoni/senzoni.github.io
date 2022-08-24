@@ -1,7 +1,7 @@
 	$(document).ready(function(){
 /*Анимация для бургера*/
 
-$('#webapp_cover').on("click", function(event) {
+/*$('#webapp_cover').on("click", function(event) {
 if($('#webapp_cover, .dropdown-menu').hasClass('active')){
 	alert(1);
 $('#webapp_cover, .dropdown-menu').removeClass('active');
@@ -11,7 +11,7 @@ else{
 $('#webapp_cover, .dropdown-menu').addClass('active');
 }
 });
-$('.menu_label ').click(function(){return false})
+$('.menu_label ').click(function(){return false})*/
 
 	$(window).scroll(( ) => {
 		let scrollDistance = $(window).scrollTop();
@@ -100,13 +100,18 @@ nav.addEventListener('click',(event) => {
 });*/
 
 
+//Бургер верхний
 
-/*Бургер
 
-$('.menu-btn').on('click', function(e) {
+$('.menu-burger').on('click', function(e) {
 	e.preventDefault;
-	$(this).toggleClass('menu-btn_active');
-});*/
+	$('.menu-burger, .dropdown-menu').toggleClass('active');
+});
+$('.dropdown-item').on('click', function(e) {
+	e.preventDefault;
+	$('.menu-burger, .dropdown-menu').removeClass('active');
+});
+
 
 /*Бегающие цифры статистики*/
      let optionsStat = {
